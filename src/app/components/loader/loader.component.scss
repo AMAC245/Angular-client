@@ -1,6 +1,6 @@
 .body {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 @mixin animateConfig($this) {
@@ -9,6 +9,15 @@
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(.6,0.08,0.8,.6);
   animation-iteration-count: infinite;
+}
+
+h1 {
+  font-size: 5em;
+  color: rgb(204, 202, 202);
+  text-align: center;
+  position: relative;
+  top: -180px;
+  z-index: -1
 }
 
 .loading-container {

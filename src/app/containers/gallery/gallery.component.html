@@ -1,2 +1,19 @@
-<p *ngIf="!gallery">Loading...</p>
-<p *ngIf="gallery">Loaded!</p>
+
+<component-loader *ngIf="!gallery"></component-loader>
+
+
+<div *ngIf="gallery" class='gallery-container'>
+  <div *ngFor="let shot of gallery">
+    <div class="content-container">
+      <div class="shot-container">
+        <img class='shot' src={{shot.images.normal}}/>
+      </div>
+      <div class="user-container">
+        <img class='user-avatar'src={{shot.user.avatar_url}} />
+      </div>
+    </div>
+  </div>
+  
+
+</div>
+
