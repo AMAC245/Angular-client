@@ -1,3 +1,5 @@
+$font-user: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 .gallery-container {
   display: flex;
   flex-flow: row wrap;
@@ -8,21 +10,14 @@
 
 .content-container {
   height: auto;
-  margin: 10px
-}
-
-.user-container {
-  width: 400px;
-  height: auto;
-  margin: 10px;
-  padding: 0 10px;
+  margin: 0px
 }
 
 .shot-container {
   width: 400px;
   height: auto;
   background:#fff;
-  margin: 10px;
+  margin: 10px 10px 0 10px;
   padding: 10px;
   border-radius: 2px;
 }
@@ -34,9 +29,24 @@
   cursor: pointer
 }
 
+.user-container {
+  padding: 0 20px;
+  display: inline-block;
+}
+  p {
+    margin-left: 32px;
+    font-size: 0.9em;
+    font-family: $font-user;
+    vertical-align: middle;
+    color: #1F8AC5;
+    cursor: pointer;
+  }
+
 .user-avatar {
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
-  cursor: pointer
+  float: left;
+  margin: 11px 0 0 0;
+  cursor: pointer;
 }

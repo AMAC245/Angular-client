@@ -16,7 +16,7 @@ export class GalleryComponent {
   ngOnInit() {
     return this._imageService.getImages().subscribe(images => {
       this.gallery = images,
-      console.log(this.gallery)
+      err => console.error(err)
     })
   }
 }
